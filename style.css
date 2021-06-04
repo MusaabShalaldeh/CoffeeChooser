@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: black;
+  color: wheat;
+  height: 100px;
+  text-align: center
+}
+
+nav{
+  padding: 30px;
+  float: right;
+}
+
+header nav li{
+  display: inline;
+  padding: 30px;
+  color: wheat;
+}
+a:link {
+  color: wheat;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+main{
+  background-color: beige;
+  text-align: center
+}
+
+footer{
+  background-color: black;
+  color: wheat;
+}
+input{
+  background-color: wheat;
+}
+
+div{
+  display: inline;
+}
+

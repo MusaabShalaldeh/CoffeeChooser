@@ -1,6 +1,7 @@
+//locks out the user until they agree to the site's terms
 var userAgreement = prompt("Do you agree to the terms of service for site ? Please answer with yes kindly.")
 
-while(userAgreement != "Yes")
+while(userAgreement != "yes")
 {
   userAgreement = prompt("Please answer with yes to be able to use this site.")
 }
@@ -18,7 +19,7 @@ function Order()
     if(coffeeType === "Black" || coffeeType === "Latte" || coffeeType === "Cappuccunio" || coffeeType === "Americano" || coffeeType === "Espresso")
     {
       // Continue with the rest of the code
-      alert("Your order is going to arrive soon!, saving your info for later references...")
+      alert("Your order is going to arrive soon!, printing your order info...")
       PrintOutInfo()
     }
     else{
@@ -53,7 +54,7 @@ function RequestDrinks()
 {
   var desiredAmount = prompt("How many drinks would you like to request?")
 
-  if(desiredAmount == isNaN)
+  if(isNaN(desiredAmount))
   {
     alert("Please enter a valid number...")
   }
@@ -62,7 +63,7 @@ function RequestDrinks()
     for(var i = 0;i < desiredAmount;i++)
     {
       var number = 1 + i;// dpomg this just to now show first drink as 0..
-      document.write("<div><img src='https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081' height='100px' width='100px'/><h4>New Hot Drink "+ number +"</h4></div>")
+      document.write("<div><img src='https://previews.123rf.com/images/rastudio/rastudio1708/rastudio170805409/84323262-cup-of-hot-drink-vector-sketch-icon-isolated-on-background-hand-drawn-cup-of-hot-drink-icon-cup-of-h.jpg' height='100px' width='100px'/><h4>New Hot Drink "+ number +"</h4></div>")
     }
   }
 
